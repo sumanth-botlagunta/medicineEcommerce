@@ -8,7 +8,7 @@ export default class Login extends Component {
         <Navbar />
         <form className="container">
           <div className="form-group">
-            <label for="email">Email:</label>
+            <label type="email">Email:</label>
             <input
               type="email"
               className="form-control"
@@ -18,7 +18,7 @@ export default class Login extends Component {
             />
           </div>
           <div className="form-group">
-            <label for="pwd">Password:</label>
+            <label type="pwd">Password:</label>
             <input
               type="password"
               className="form-control"

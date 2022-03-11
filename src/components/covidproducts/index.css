@@ -1,0 +1,44 @@
+.covid-banner {
+    width: 100%;
+  }
+  .covid-banner > img {
+    width: 100%;
+  }
+  .all-medicines {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .medicine-info {
+    margin-bottom: 10px;
+    display: flex;
+    width: 320px;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    border: 1px solid rgb(21, 155, 21);
+    border-radius: 3px;
+    padding: 5px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    transition-duration: 1ms;
+    background-color: #dff0d8;
+  }
+  
+  .medicine-img > img {
+    width: 300px;
+    height: 270px;
+    border-radius: 3px;
+  }
+  
+  .medicine-desc,
+  .medicine-desc > p {
+    width: 100%;
+  }
+  
+  .medi-cost {
+    width: 100%;
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+  
