@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import './navbar.css';
+import "./navbar.css";
 
 export default function Navbar() {
   return (
@@ -24,17 +24,17 @@ export default function Navbar() {
         <div className="collapse navbar-collapse" id="myNavbar">
           <ul className="nav navbar-nav">
             <li>
-            <form className="location-detect">
-            <input
-              className="form-control search-field"
-              type="search"
-              placeholder="detect Location"
-              aria-label="Location"
-            />
-            <button className="btn btn-success" type="submit">
-              Detect
-            </button>
-          </form>
+              <form className="location-detect">
+                <input
+                  className="form-control search-field"
+                  type="search"
+                  placeholder="detect Location"
+                  aria-label="Location"
+                />
+                <button className="btn btn-success" type="submit">
+                  <span className="material-icons">gps_fixed</span>
+                </button>
+              </form>
             </li>
             <li>
               <a href="/">categories</a>

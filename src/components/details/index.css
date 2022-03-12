@@ -1,0 +1,71 @@
+.med-details {
+  width: 100%;
+  display: flex;
+  margin-top: 30px;
+  padding: 10px;
+}
+
+.med-image {
+  display: flex;
+  width: 50%;
+  justify-content: center;
+}
+
+.med-details-content {
+  display: flex;
+  width: 50%;
+  font-size: 1.5em;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 850px) {
+  .med-details {
+    flex-direction: column;
+  }
+
+  .med-image {
+    width: 100%;
+  }
+
+  .med-details-content {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+.med-details-content > ul {
+  list-style: none;
+  padding-top: 30px;
+}
+
+.med-details-content > ul > li {
+  padding: 5px;
+  font-weight: 700;
+}
+
+.med-details-content > ul > li > span {
+  font-weight: 400;
+}
+
+.med-buttons > button {
+  margin: 10px;
+  width: 150px;
+  height: 50px;
+  font-size: 2rem;
+}
+
+.btn-black {
+  color: white;
+  background-color: rgb(26, 24, 24);
+}
+
+.btn-black:hover {
+  color: white;
+  background-color: rgba(26, 24, 24, 0.788);
+}
+
+.btn-black:active {
+  color: white;
+  background-color: rgba(26, 24, 24, 0.788);
+}

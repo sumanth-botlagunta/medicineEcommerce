@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import banner from "./Banner.jpg";
+import { Link } from "react-router-dom";
 export default class Index extends Component {
   rendermedicines = (data) => {
     if (data) {
@@ -14,9 +15,11 @@ export default class Index extends Component {
               <p className="desc-text">{item.description}</p>
             </div>
             <div className="medi-cost">₹{item.cost}</div>
-            <button className="btn btn-danger" value={item.id}>
-              Visit Now &gt;&gt;&gt;
-            </button>
+            <Link to={`/details/${item.id}`}>
+              <button className="btn btn-danger" value={item.id}>
+                Visit Now
+              </button>
+            </Link>
           </div>
         );
       });
