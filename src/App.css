@@ -2,6 +2,8 @@
 .App {
   box-sizing: border-box;
   font-family: 'League Spartan', sans-serif;
+  background-color: #d7ddef88;
+  height: 100%;
 }
 
 .material-icons {

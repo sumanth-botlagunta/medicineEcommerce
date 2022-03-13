@@ -18,7 +18,7 @@ export default function Navbar() {
             <span className="icon-bar"></span>
           </button>
           <Link to="/" className="navbar-brand">
-            Medi-Max
+            <img src="https://i.ibb.co/hcHkvsY/image.png" alt="Medi-max" className="logo"  />
           </Link>
         </div>
         <div className="collapse navbar-collapse" id="myNavbar">
@@ -37,7 +37,7 @@ export default function Navbar() {
               </form>
             </li>
             <li>
-              <a href="/">categories</a>
+              <a href="/">Categories</a>
             </li>
             <li>
               <Link to="/">Browse Medicines</Link>

@@ -1,5 +1,7 @@
+
 .covid-banner {
     width: 100%;
+    margin: 0px !important;
   }
   .covid-banner > img {
     width: 100%;
@@ -13,7 +15,7 @@
   .medicine-info {
     margin-bottom: 10px;
     display: flex;
-    width: 320px;
+    width: 200px;
     flex-wrap: nowrap;
     flex-direction: column;
     border: 1px solid rgb(21, 155, 21);
@@ -22,12 +24,12 @@
     justify-content: flex-start;
     align-items: flex-start;
     transition-duration: 1ms;
-    background-color: #dff0d8;
+    background-color: #d8def0;
   }
   
   .medicine-img > img {
-    width: 300px;
-    height: 270px;
+    width: 190px;
+    height: 140px;
     border-radius: 3px;
   }
   
@@ -41,4 +43,26 @@
     font-size: 1.5em;
     font-weight: bold;
   }
+
+  @media screen and (max-width: 600px) {
+    .medicine-info {
+      width: 120px;
+    }
+    .medicine-img > img {
+      width: 105px;
+      height: 100px;
+    }
+    .medicine-desc,
+    .medicine-desc > p {
+      width: 100%;
+    }
+  }
+
+  @media screen and (min-width: 600px) {
+    .medicine-info:hover {
+      transform: scale(1.05);
+    }
+  }
+    
+ 
   

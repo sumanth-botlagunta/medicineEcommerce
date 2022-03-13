@@ -1,0 +1,26 @@
+.auth{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #d8def0;
+    margin: 25vh auto;
+    padding: 1.5rem;
+    border-radius: 3px;
+    box-shadow:
+  2.4px 2.9px 2.2px rgba(0, 0, 0, 0.025),
+  5.8px 6.9px 5.3px rgba(0, 0, 0, 0.036),
+  10.9px 13px 10px rgba(0, 0, 0, 0.045),
+  19.4px 23.2px 17.9px rgba(0, 0, 0, 0.054),
+  36.3px 43.4px 33.4px rgba(0, 0, 0, 0.065),
+  87px 104px 80px rgba(0, 0, 0, 0.09)
+;
+
+}
+
+@media screen and (max-width: 600px) {
+    .auth{
+        width: 100%;
+        box-shadow: none;
+    }
+}

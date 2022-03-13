@@ -6,21 +6,18 @@ export default class Index extends Component {
     if (data) {
       return data.map((item) => {
         return (
-          <div className="medicine-info" key={item._id}>
-            <div className="medicine-img">
-              <img src={item.image} alt="medicine" />
+          <Link to={`/details/${item.id}`} style={{ textDecoration: "none" ,color: 'black'}}>
+            <div className="medicine-info" key={item._id}>
+              <div className="medicine-img">
+                <img src={item.image} alt="medicine" />
+              </div>
+              <div className="medicine-desc">
+                <h4>{item.name}</h4>
+                <p className="desc-text">{item.description}</p>
+              </div>
+              <div className="medi-cost">₹{item.cost}</div>
             </div>
-            <div className="medicine-desc">
-              <h2>{item.name}</h2>
-              <p className="desc-text">{item.description}</p>
-            </div>
-            <div className="medi-cost">₹{item.cost}</div>
-            <Link to={`/details/${item.id}`}>
-              <button className="btn btn-danger" value={item.id}>
-                Visit Now
-              </button>
-            </Link>
-          </div>
+          </Link>
         );
       });
     }
@@ -28,7 +25,7 @@ export default class Index extends Component {
   render() {
     return (
       <>
-        <div className="container-fluid">
+        <div className="container-fluid page-container">
           <div className="covid-banner">
             <img src={banner} alt="_covidbanner_" />
           </div>

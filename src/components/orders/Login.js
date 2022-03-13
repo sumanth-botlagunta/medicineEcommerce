@@ -1,12 +1,14 @@
 import React, { Component } from "react";
 import Navbar from "../navbar/Navbar";
+import './index.css'
 
 export default class Login extends Component {
   render() {
     return (
       <div>
         <Navbar />
-        <form className="container">
+        <form className="container auth">
+          <h2 className="text-center">Login</h2>
           <div className="form-group">
             <label type="email">Email:</label>
             <input

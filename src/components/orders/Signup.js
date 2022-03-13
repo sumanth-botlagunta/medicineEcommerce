@@ -6,7 +6,8 @@ export default class Signup extends Component {
     return (
       <div>
         <Navbar />
-        <form className="container">
+        <form className="container auth">
+        <h2 className="text-center">Register</h2>
           <div className="form-group">
             <label type="string">Name:</label>
             <input
@@ -40,6 +41,7 @@ export default class Signup extends Component {
           <button type="submit" className="btn btn-primary">
             Create account
           </button>
+          <h4 className="text-center">Register as a doctor</h4> 
         </form>
       </div>
     );

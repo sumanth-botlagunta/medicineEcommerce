@@ -1,3 +1,12 @@
+.navbar{
+  border-radius: 0px !important;
+  font-size: 1.8rem;
+}
+
+.logo{
+  height: 40px;
+  margin-top: -10px;
+}
 .location-detect {
   display: flex;
   flex-direction: row;
