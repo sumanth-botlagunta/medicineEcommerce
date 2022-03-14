@@ -12,10 +12,8 @@ export default class Signup extends Component {
     this.state = {
       email: "",
       password: "",
-      username: "",
       phone: "",
-      name: "",
-      message: "",
+      name: ""
     };
   }
   handleChange = (event) => {
@@ -55,7 +53,7 @@ export default class Signup extends Component {
               onChange={this.handleChange}
             />
           </div>
-          <div className="form-group">
+          {/* <div className="form-group">
             <label type="string">Username:</label>
             <input
               type="username"
@@ -66,7 +64,7 @@ export default class Signup extends Component {
               value={this.state.username}
               onChange={this.handleChange}
             />
-          </div>
+          </div> */}
           <div className="form-group">
             <label type="email">Email:</label>
             <input
@@ -103,7 +101,7 @@ export default class Signup extends Component {
               onChange={this.handleChange}
             />
           </div>
-          <div className="form-group">
+          {/* <div className="form-group">
             <input
               type="hidden"
               className="form-control"
@@ -111,7 +109,7 @@ export default class Signup extends Component {
               name="qualification"
               value="NO"
             />
-          </div>
+          </div> */}
           <div className="form-group">
             <input
               type="hidden"

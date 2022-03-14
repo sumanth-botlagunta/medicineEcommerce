@@ -3,13 +3,13 @@ import Navbar from "../navbar/Navbar";
 import "./index.css";
 
 const url =
-  "https://medimaxauth.herokuapp.com/api/authentication/login";
+  "http://localhost:8000/api/authentication/login";
 
 export default class Login extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      username: "",
+      email: "",
       password: "",
       message: "",
     };
@@ -49,14 +49,14 @@ export default class Login extends Component {
         <form className="container auth">
           <h2 className="text-center">Login</h2>
           <div className="form-group">
-            <label type="username">Enter Username:</label>
+            <label type="email">Enter Email:</label>
             <input
-              type="username"
+              type="email"
               className="form-control"
-              id="username"
+              id="email"
               placeholder="Enter User Name"
-              name="username"
-              value={this.state.username}
+              name="email"
+              value={this.state.email}
               onChange={this.handleChange}
             />
           </div>
