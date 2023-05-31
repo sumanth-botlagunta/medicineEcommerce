@@ -3,7 +3,7 @@ import Navbar from "../navbar/Navbar";
 import "./index.css";
 
 const url =
-  "http://localhost:8000/api/authentication/login";
+  "https://medimaxauth.onrender.com/api/authentication/login";
 
 export default class Login extends Component {
   constructor(props) {
