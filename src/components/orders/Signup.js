@@ -5,7 +5,7 @@ import Navbar from "../navbar/Navbar";
 //   "https://medimaxauth.herokuapp.com/api/authentication/register";
 
 const url =
-  "http://localhost:8000/api/authentication/register";
+  "https://medimaxauth.onrender.com/api/authentication/register";
 export default class Signup extends Component {
   constructor(props) {
     super(props);
