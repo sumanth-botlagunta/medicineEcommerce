@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "./index.css";
 import Covidmeds from "./Index";
 //api url for courses
-const url = "https://medicinecovidapi.herokuapp.com/covid-medicines";
+const url = "https://medicineapi.onrender.com/covid-medicines";
 class Apicall extends Component {
   constructor(props) {
     super(props);
