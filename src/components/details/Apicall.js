@@ -3,7 +3,7 @@ import axios from "axios";
 import Meddisplay from "./Index";
 import Navbar from "../navbar/Navbar";
 
-const url = "https://medicinecovidapi.herokuapp.com/covid-medicines?covidID=";
+const url = "https://medicineapi.onrender.com/covid-medicines?covidID=";
 
 export default class Apicall extends Component {
   constructor(props) {
